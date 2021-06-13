@@ -46,7 +46,7 @@
 
         a {
           @extend%trans-4;
-          padding: 1rem;
+          padding:14px 8px;
           display: block;
           font-weight: 700;
           border-radius: 6px;
@@ -68,7 +68,6 @@
         }
 
         ul {
-          background-color: rgba($white-color, 1);
           border-radius: 6px;
           width: 100%;
           padding: 6px 10px;
@@ -83,12 +82,11 @@
             a {
               font-weight: 600;
               font-size: 14px;
-              padding: ​10px;
-              color: rgba($black-color, .7);
+              padding: 5px ;
+              color: rgba($white-color, .7);
               &.active,
               &:hover {
-                background-color: rgba($min-color, .2);
-                color: rgba($black-color, 1);
+                background-color: rgba($white-color, .1);
               }
             }
           }
