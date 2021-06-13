@@ -1,0 +1,70 @@
+
+        .card {
+            margin: 10px 0;
+          ul {
+            li {
+              flex-wrap: wrap;
+              font-weight: 600;
+  
+              span {
+                margin: 4px 10px;
+              }
+            }
+          }
+        }
+    
+
+      .buttom_style{
+        display: inline-block;
+        padding: 12px 30px;
+        border: 1px solid $min-color;
+        border-radius: 3px;
+        color: $white-color;
+        font-size: 20px;
+        background-color: $min-color;
+        @extend%trans-4;
+        
+        &:hover {
+            background-color: transparent;
+            color: $white-color;
+            border-color: $white-color;
+        }
+    }
+    .buttom_style_2{
+        display: inline-block;
+        padding: 8px 30px;
+        font-weight: 500;
+        border-radius: 3px;
+        color: $white-color;
+        font-size: 18px;
+        background-color: $min-color;
+        @extend%trans-4;
+        
+        &:hover {
+            color: $white-color;
+            background-color: $dark-color;
+        
+    }
+    }
+    
+
+    .edit-buttom{
+        background-color: #000;
+        color: $gray-color;
+    }
+
+    .link-box{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        a{
+            margin: 4px;
+        }
+    }
+
+
+    .card-img, .card-img-top{
+      height: 300px;
+      width: 100%;
+      object-fit: cover;
+    }

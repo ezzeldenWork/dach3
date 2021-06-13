@@ -1,0 +1,39 @@
+.note-box{
+    padding: 10px 20px;
+    background-color: rgba($dark-color, .1);
+}
+
+.prag{
+    font-size: 20px;
+    color: rgba($dark-color, 1);
+    font-weight: 600;
+}
+
+
+.table-style{
+    tr,th{
+        border: 1px solid rgba($dark-color, .3);
+        border-collapse: collapse;
+    }
+
+    .btn {
+        padding: 2px 20px;
+        font-weight: 500;
+        font-size: 16px;
+    }
+}
+
+
+
+.theme-color-item{
+    @extend%theme-color;
+}
+.theme-back-color-item{
+    @extend%theme-back-color;
+}
+.theme-back-solid-color-item{
+    @extend%theme-back-solid-color;
+}
+.theme-border-color-item{
+    @extend%theme-border-color;
+}

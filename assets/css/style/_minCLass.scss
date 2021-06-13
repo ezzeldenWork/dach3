@@ -1,0 +1,53 @@
+// min class
+body {
+    font-family:$min-font;
+    background-color: rgba($gray-color, 1);
+    &.login{
+        background-color: rgba($min-color, 1);
+    }
+}
+ul{
+    padding: 0;
+}
+a {
+    text-decoration: none;
+}
+
+.padd-40 {
+    padding: 40px 0;
+}
+
+.marg {
+    margin: 40px 0;
+}
+
+.border-b {
+    padding: 13px 0;
+    border-bottom: 1.5px solid rgba($white-color, .3);
+}
+
+.border-r{
+    overflow: hidden;
+    border-radius: 5px;
+}
+
+.box-sh{
+    box-shadow: -2px 4px 8px rgba($black-color, .1);
+}
+
+
+// min class
+
+
+
+
+.btn{
+    color: $white-color;
+    padding: 8px 30px;
+    font-weight: 500;
+    border-radius: 3px;
+    font-size: 18px;
+    &:hover{
+      color: $white-color;
+    }
+  }

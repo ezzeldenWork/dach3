@@ -1,0 +1,130 @@
+.content-section {
+    html[dir="rtl"] & {
+        margin-right: 237px;
+
+        &.full-width {
+            margin-right: 110px;
+        }
+    }
+
+    html[dir="ltr"] & {
+        margin-left: 237px;
+
+        &.full-width {
+            margin-left: 110px;
+        }
+    }
+}
+
+
+
+@media(max-width:772px) {
+    .content-section {
+
+        html[dir="rtl"] & {
+            margin-right: 0;
+
+            &.full-width {
+                margin-right: 0;
+            }
+        }
+
+        html[dir="ltr"] & {
+            margin-left: 0;
+
+            &.full-width {
+                margin-left: 0;
+            }
+        }
+    }
+}
+
+
+
+
+
+
+
+// content-box
+
+
+.content-box {
+    height: 100vh;
+    padding: 20px 35px;
+
+    .page-title {
+        font-size: 28px;
+        font-weight: 600;
+        margin: 0 0 20px;
+        color: rgba($dark-color, 1.0);
+    }
+
+    .number-box {
+        margin: 10px 0;
+        display: flex;
+        align-self: flex-end;
+        justify-content: space-between;
+        background-color: rgba($white-color, 1);
+        padding: 12px 20px;
+        border-right: 3.5px solid;
+        @extend%trans-4;
+
+        &:hover {
+            transform: scale(1.02) translateY(-5px);
+        }
+
+        i {
+            font-size: 50px;
+            color: rgba($dark-color, .1);
+
+            align-self: flex-end;
+        }
+
+        .content-text {
+
+            .title {
+                font-size: 14px;
+                margin: 10px 0;
+            }
+
+            .statistics-count {
+                font-size: 28px;
+                color: rgba($dark-color, 1.0);
+                font-weight: 600;
+            }
+        }
+    }
+
+    .dach-min-box {
+        padding: 30px 0;
+
+        position: relative;
+        overflow: hidden;
+    }
+
+
+    .dach-card {
+        margin: 10px 0;
+        border: 1px solid rgba($dark-color, .1);
+
+        .box-title {
+            font-size: 16px;
+            font-weight: 600;
+            background-color: rgba($dark-color, .005);
+            color: rgba($min-color, 1.0);
+            padding: 14px 20px;
+            border-bottom: 1px solid rgba($dark-color, 0.2);
+
+            @extend.theme-color-item;
+
+        }
+
+        .card-body {
+            padding: 10px;
+            background-color: rgba($white-color, 1.0);
+        }
+    }
+
+}
+
+// content-box

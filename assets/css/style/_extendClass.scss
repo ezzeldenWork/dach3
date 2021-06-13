@@ -1,0 +1,40 @@
+// extendClass
+
+%trans-4 {
+  transition: 0.4s all ease-in-out;
+}
+
+%flex-box {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+// extendClass
+
+
+@each $color, $color-name in $themeColorItem {
+  %theme-back-solid-color {
+      &[data-color="#{$color}"] {
+          background-color: #{$color-name} !important;
+      }
+  }
+
+  %theme-color {
+      &[data-color="#{$color}"] {
+          color: #{$color-name} !important;
+      }
+  }
+
+  %theme-border-color {
+      &[data-color="#{$color}"] {
+          border-color: #{$color-name} !important;
+      }
+  }
+
+  %theme-back-color {
+      &[data-color="#{$color}"] {
+          background: linear-gradient(180deg, #{$color-name} 10%, #{$color-name  - 50} 100%) !important;
+      }
+  }
+}

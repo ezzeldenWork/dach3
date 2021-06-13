@@ -1,0 +1,41 @@
+.colro-box {
+  ul {
+    display: flex;
+    flex-wrap: wrap;
+    list-style: none;
+
+    li {
+      margin: 4px 10px;
+
+      width: 40px;
+      height: 40px;
+      border-radius: 50%;
+      display: inline-block;
+      cursor: pointer;
+
+      &.blue-color {
+
+          background: linear-gradient(180deg, $blue-color 10%, $blue-color - 50 100%);
+        
+      }
+
+      &.green-color {
+
+          background: linear-gradient(180deg, $green-color 10%, $green-color - 50 100%);
+        
+      }
+
+      &.black-color{
+
+          background: linear-gradient(180deg, $black-color 10%, $black-color - 50 100%);
+        
+      }
+
+      &.grey-color {
+      
+          background: linear-gradient(180deg, $grey-color 10%, $grey-color - 50 100%);
+        
+      }
+    }
+  }
+}
